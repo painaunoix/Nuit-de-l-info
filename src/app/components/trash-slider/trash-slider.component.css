@@ -1,0 +1,15 @@
+.game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f0f0; /* Couleur de fond */
+  }
+  
+  .game-image {
+    position: absolute;
+    transition: transform 0.1s linear;
+    width: 50px; /* Taille des images */
+    height: 50px;
+  }
+  
