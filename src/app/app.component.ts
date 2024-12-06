@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./components/navbar/navbar.component";
+import { GameComponent } from './components/trash-slider/trash-slider.component';
 import { LyrecoComponent } from './components/lyreco/lyreco.component';
 import { SeaComponent } from './components/sea/sea.component';
 
