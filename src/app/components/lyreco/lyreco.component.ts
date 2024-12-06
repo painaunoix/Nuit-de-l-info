@@ -11,8 +11,8 @@ import { NgIf } from '@angular/common'
   styleUrls: ['./lyreco.component.css']
 })
 export class LyrecoComponent implements OnInit {
-  topPosition: string = '50%';
-  leftPosition: string = '50%';
+  topPosition: string = `calc(50% + ${Math.random() * 10 - 5}%)`;
+  leftPosition: string = `calc(50% + ${Math.random() * 10 - 5}%)`;
   isAnimating: boolean = false;
   showGif: boolean = false;
   isClicked: boolean = false;
@@ -28,8 +28,8 @@ export class LyrecoComponent implements OnInit {
   }
 
   moveImageToRandomPosition(): void {
-    const randomTop = Math.random() * 100;
-    const randomLeft = Math.random() * 100;
+    const randomTop = Math.random() * 80;
+    const randomLeft = Math.random() * 80;
     this.topPosition = `${randomTop}%`;
     this.leftPosition = `${randomLeft}%`;
   }
