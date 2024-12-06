@@ -12,7 +12,8 @@ import { RouterModule } from '@angular/router';
 })
 export class NavbarComponent {
     constructor(private ChangeVueService: ChangeVueService,
-                private router: RouterModule    ) { }
+                private router: RouterModule    ) {
+                }
 
   onScrollToBottom() {
       this.ChangeVueService.scrollToBottom(2);
