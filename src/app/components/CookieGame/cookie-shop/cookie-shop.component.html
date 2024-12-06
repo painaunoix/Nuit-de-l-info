@@ -1,0 +1,10 @@
+<div class="shop">
+  <h2>
+    Boutique
+  </h2>
+  <div *ngFor="let upgrade of cookieGameService.upgrades">
+    <button (click)="buy(upgrade)">
+      {{ upgrade.name }} - {{ upgrade.cost }} points
+    </button>
+  </div>
+</div>

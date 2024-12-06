@@ -1,0 +1,8 @@
+<div class="sound-controller">
+    <h2>Volume du Microphone :</h2>
+    <p>Volume actuel : {{ Math.floor(CookieGameService.volume) }}</p>
+    <span>CRIEEEEEE !!!!!!!</span>
+    <div>
+        <mat-slider min="0" max="50" step="1"><input matSliderThumb [value]="CookieGameService.volume"></mat-slider>
+    </div>
+  </div>
