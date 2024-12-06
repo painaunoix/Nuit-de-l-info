@@ -1,6 +1,32 @@
 <div class="body-container">
     <img
-        width="350px"
-        src="image/body.png"
+        width="390px"
+        src="image/body/body.png"
+    >
+    <img
+        (click)="head_clicked = !head_clicked; torso_clicked = torso_clicked ? false : torso_clicked"
+        id="head"
+        class="to-hover"
+        width="240px"
+        src="image/body/body_head.png"
+    >
+    <img
+        *ngIf="head_clicked"
+        class="head-organ"
+        width="240px"
+        src="image/body/organ/head.png"
+    >
+    <img
+        (click)="torso_clicked = !torso_clicked; head_clicked = head_clicked ? false : head_clicked"
+        id="torso"
+        class="to-hover"
+        width="200px"
+        src="image/body/body_torso.png"
+    >
+    <img
+        *ngIf="torso_clicked"
+        class="torso-organ"
+        width="240px"
+        src="image/body/organ/torso.png"
     >
 </div>

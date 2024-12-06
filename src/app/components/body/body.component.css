@@ -3,3 +3,39 @@
     width: 100%;
     justify-content: center;
 }
+
+.body-container img {
+    position: absolute;
+    z-index: 5;
+    bottom: 120px;
+}
+
+.to-hover {
+    cursor: pointer;
+}
+
+#head {
+    bottom: 420px;
+}
+
+.body-container #head:hover {
+    width: 280px;
+}
+
+.body-container #torso:hover {
+    width: 250px;
+}
+
+.head-organ {
+    top: 200px;
+    left: 50px;
+    width: 400px;
+    position: absolute;
+}
+
+.torso-organ {
+    top: 200px;
+    left: 100px;
+    width: 300px;
+    position: absolute;
+}
