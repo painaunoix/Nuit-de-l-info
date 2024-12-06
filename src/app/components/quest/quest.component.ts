@@ -12,9 +12,9 @@ export class QuestComponent {
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogContentExampleDialog, {
       width: '400px',
-      height: '100%',
-      position: { right: '0px', top: '20px' }, // Positionner la popup sur la droite de la fenêtre
-      data: { title: "Quest Information", content: "Détails de la quête ici..." }
+      height: '30%',
+      position: { right: '0px', top: '630px' }, // Positionner la popup sur la droite de la fenêtre
+      data: { title: "Quest Information", content: "Récolter 100 déchets pour sauver l'océan !" }
     });
 
     dialogRef.afterClosed().subscribe(result => {
