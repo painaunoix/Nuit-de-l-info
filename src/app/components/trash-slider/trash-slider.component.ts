@@ -44,7 +44,7 @@ export class GameComponent implements OnInit {
     const newImage: GameImage = {
       src: this.imageSources[randomIndex],
       x: -50,
-      y: Math.random() * (window.innerHeight - 50),
+      y: Math.random() * 400,
       speed: Math.random() * 1 + 1
     };
     this.images.push(newImage);
