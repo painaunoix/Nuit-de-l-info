@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './sea.component.css'
 })
 export class SeaComponent {
-
 }
