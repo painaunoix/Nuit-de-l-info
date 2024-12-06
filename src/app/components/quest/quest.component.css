@@ -1,0 +1,24 @@
+.round-element {
+    z-index: 9999; /* Exemple très élevé pour test */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Assure une transition douce pour le hover */
+}
+
+.round-element:hover {
+    background-color: #007bff; /* Change la couleur de fond au survol */
+    color: white; /* Change la couleur du texte au survol */
+    transform: scale(1.1); /* Agrandit légèrement l'élément */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Ombre plus prononcée pour un effet de profondeur */
+    transform: scale(1.1);
+}

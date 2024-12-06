@@ -1,0 +1,33 @@
+<!-- src/app/components/signup/signup.component.html -->
+<div class="signup-container">
+  <h2>Sign Up</h2>
+
+  <!-- Error Message -->
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+
+  <!-- Success Message -->
+  <div *ngIf="successMessage" class="success-message">
+    {{ successMessage }}
+  </div>
+
+  <!-- Signup Form -->
+  <form (ngSubmit)="signup()">
+    <input
+      [(ngModel)]="email"
+      name="email"
+      placeholder="Email"
+      type="email"
+      required
+    />
+    <input
+      [(ngModel)]="password"
+      name="password"
+      placeholder="Password"
+      type="password"
+      required
+    />
+    <button type="submit">Sign Up</button>
+  </form>
+</div>

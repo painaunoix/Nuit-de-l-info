@@ -1,0 +1,56 @@
+.body-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.body-container img {
+    position: absolute;
+    z-index: 5;
+    bottom: 120px;
+}
+
+.to-hover {
+    cursor: pointer;
+}
+
+#head {
+    bottom: 420px;
+}
+
+.body-container #head:hover {
+    width: 280px;
+}
+
+.body-container #torso:hover {
+    width: 250px;
+}
+
+.head-organ {
+    top: 200px;
+    left: 50px;
+    width: 400px;
+    position: absolute;
+}
+
+.torso-organ {
+    top: 200px;
+    left: 100px;
+    width: 300px;
+    position: absolute;
+}
+
+.text-box {
+    background: linear-gradient(90deg, rgba(80,122,200,1) 0%, rgba(46,89,177,1) 100%);
+    height: 300px;
+    border-radius: 25px;
+    z-index: 999;
+    position: absolute;
+    top: 300px;
+    right: 50px;
+    width: 35%;
+}
+.text-box p {
+    padding: 20px;
+    color: aliceblue;
+}
