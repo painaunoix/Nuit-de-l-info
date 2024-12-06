@@ -16,6 +16,9 @@
         width="240px"
         src="image/body/organ/head.png"
     >
+    <div *ngIf="head_clicked" class="text-box">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
     <img
         (click)="torso_clicked = !torso_clicked; head_clicked = head_clicked ? false : head_clicked"
         id="torso"
@@ -29,4 +32,7 @@
         width="240px"
         src="image/body/organ/torso.png"
     >
+    <div *ngIf="torso_clicked" class="text-box">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
 </div>

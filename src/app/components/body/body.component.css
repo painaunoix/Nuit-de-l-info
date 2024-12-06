@@ -39,3 +39,10 @@
     width: 300px;
     position: absolute;
 }
+
+.head-organ, .torso-organ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
