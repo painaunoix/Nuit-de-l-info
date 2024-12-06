@@ -19,16 +19,16 @@ img.random-image:hover {
 }
 
 img.gif-animation {
-  position: fixed; /* Le GIF apparaît au centre de la fenêtre */
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 2000px; /* Taille du GIF ajustée */
+  width: 2000px;
   height: auto;
   z-index: 1000;
-  pointer-events: none; /* Désactive les interactions avec le GIF */
-  opacity: 1; /* Pleine visibilité */
-  transition: opacity 1s ease-out; /* Transition pour l'opacité */
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 1s ease-out;
 }
 
 .clicked-message {
@@ -40,6 +40,6 @@ img.gif-animation {
   color: #007bff;
   font-weight: bold;
   text-align: center;
-  opacity: 1; /* Pleine visibilité */
-  transition: opacity 1s ease-out; /* Transition pour l'opacité */
+  opacity: 1;
+  transition: opacity 1s ease-out;
 }

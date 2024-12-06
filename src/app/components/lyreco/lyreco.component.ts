@@ -11,25 +11,25 @@ import { NgIf } from '@angular/common'
   styleUrls: ['./lyreco.component.css']
 })
 export class LyrecoComponent implements OnInit {
-  topPosition: string = '50%';  // Position verticale initiale
-  leftPosition: string = '50%';  // Position horizontale initiale
-  isAnimating: boolean = false;  // Gère l'animation
-  showGif: boolean = false;  // Contrôle l'affichage du GIF
-  isClicked: boolean = false;  // Gère l'affichage du message après clic
+  topPosition: string = '50%';
+  leftPosition: string = '50%';
+  isAnimating: boolean = false;
+  showGif: boolean = false;
+  isClicked: boolean = false;
 
   ngOnInit(): void {
-    this.startRandomMovement(); // Lancement du mouvement aléatoire
+    this.startRandomMovement()
   }
 
   startRandomMovement(): void {
     setInterval(() => {
       this.moveImageToRandomPosition();
-    }, 7000); // Déplacement toutes les 10 secondes
+    }, 7000);
   }
 
   moveImageToRandomPosition(): void {
-    const randomTop = Math.random() * 80;
-    const randomLeft = Math.random() * 80;
+    const randomTop = Math.random() * 100;
+    const randomLeft = Math.random() * 100;
     this.topPosition = `${randomTop}%`;
     this.leftPosition = `${randomLeft}%`;
   }
@@ -38,16 +38,12 @@ export class LyrecoComponent implements OnInit {
     this.moveImageToRandomPosition();
     console.log('Image cliquée !');
 
-    // Affiche le GIF
     this.showGif = true;
 
-    // Affiche le message
     this.isClicked = true;
-
-    // Masque le GIF et le message après 3 secondes
     setTimeout(() => {
-      this.showGif = false;  // Masque le GIF
-      this.isClicked = false;  // Masque le message
-    }, 5000); // Durée d'affichage du GIF et du message
+      this.showGif = false;
+      this.isClicked = false;
+    }, 5000);
   }
 }
