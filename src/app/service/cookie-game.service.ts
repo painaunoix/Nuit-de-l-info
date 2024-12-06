@@ -17,6 +17,8 @@ export class CookieGameService {
   public multiplier: number = 1;
   public autoClickPower: number = 0;
 
+  public volume: number = 0;
+
   public upgrades: Upgrade[] = [
     { name: 'Achat de clique', cost: 10, multiplier: 2, autoClick: false},
     { name: 'Clique automatique', cost: 50, multiplier: 1, autoClick: true},
@@ -28,6 +30,9 @@ export class CookieGameService {
         this.addScore();
       }
     }, 1000);
+    setInterval(() => {
+      this.score = Math.floor(this.volume / 2);
+    }, 5000);
   }
 
   addScore(): void {
