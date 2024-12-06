@@ -1,0 +1,45 @@
+<div class="body-container">
+    <img
+        width="390px"
+        src="image/body/body.png"
+    >
+    <img
+        (click)="head_clicked = !head_clicked; torso_clicked = torso_clicked ? false : torso_clicked"
+        id="head"
+        class="to-hover"
+        width="240px"
+        src="image/body/body_head.png"
+    >
+    <img
+        *ngIf="head_clicked"
+        class="head-organ"
+        width="240px"
+        src="image/body/organ/head.png"
+    >
+    <div *ngIf="head_clicked" class="text-box">
+        <p>
+        Cerveau : Il est composé d'environ 75% d'eau. Une hydratation insuffisante peut entraîner des troubles cognitifs, comme une diminution de la concentration, des maux de tête, et une altération de l'humeur. L'eau est essentielle pour le transport des nutriments et pour éliminer les toxines.
+        </p>
+    </div>
+    <img
+        (click)="torso_clicked = !torso_clicked; head_clicked = head_clicked ? false : head_clicked"
+        id="torso"
+        class="to-hover"
+        width="200px"
+        src="image/body/body_torso.png"
+    >
+    <img
+        *ngIf="torso_clicked"
+        class="torso-organ"
+        width="240px"
+        src="image/body/organ/torso.png"
+    >
+    <div *ngIf="torso_clicked" class="text-box">
+        <p>
+            Cœur : En tant que muscle, le cœur utilise l'eau pour maintenir une bonne circulation sanguine. Une hydratation adéquate permet de garantir une pression sanguine stable et de réduire le stress cardiaque.
+        </p>
+        <p>
+            Reins : Les reins filtrent les déchets et régulent l'équilibre hydrique du corps. L'eau est indispensable pour la production d'urine, le principal moyen d’élimination des toxines du corps.
+        </p>
+    </div>
+</div>
