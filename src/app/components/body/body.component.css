@@ -40,9 +40,14 @@
     position: absolute;
 }
 
-.head-organ, .torso-organ {
+.text-box {
+    background: linear-gradient(90deg, rgba(80,122,200,1) 0%, rgba(46,89,177,1) 100%);
+    height: 200px;
+    border-radius: 25px;
+    z-index: 999;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
+    top: 300px;
+}
+.text-box p {
+    padding: 20px;
+}
