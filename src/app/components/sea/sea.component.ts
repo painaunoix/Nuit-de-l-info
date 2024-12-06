@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { BodyComponent } from '../body/body.component';
 
 @Component({
   selector: 'app-sea',
-  imports: [],
+  imports: [BodyComponent],
   templateUrl: './sea.component.html',
   styleUrl: './sea.component.css'
 })
