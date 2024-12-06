@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component'; // Chemin à ajuster
+import { LoginComponent } from './components/login/login.component'; // Chemin ï¿½ ajuster
 
 const routes: Routes = [
 	{ path: 'login', component: LoginComponent },
-	// Ajoutez d'autres routes si nécessaire
+	// Ajoutez d'autres routes si nÃ©cessaire
 ];
 
 @NgModule({
 	imports: [RouterModule.forRoot(routes)],  // Charge les routes
-	exports: [RouterModule]  // Exporte les routes pour qu'elles soient utilisées ailleurs
+	exports: [RouterModule]  // Exporte les routes pour qu'elles soient utilisï¿½es ailleurs
 })
 export class AppRoutingModule { }
