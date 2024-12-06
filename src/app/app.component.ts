@@ -4,6 +4,7 @@ import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { SeaComponent } from './components/sea/sea.component';
 import { QuestComponent } from './components/quest/quest.component'
+import { LyrecoComponent } from './components/lyreco/lyreco.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 
