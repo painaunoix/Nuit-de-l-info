@@ -1,6 +1,29 @@
-<p>ENZO TU PARLE TROP !!!!!!</p>
 <a routerLink="/login">Login</a>
 <nav>
     <a routerLink="/login">Login</a>  <!-- Lien vers la page de login -->
     <a routerLink="/home">Home</a>    <!-- Lien vers la page d'accueil -->
+    <a routerLink="/Signup">Signup</a>    <!-- Lien vers la page de Signup -->
   </nav>
+<div class="navbar">
+    <div class="logo">
+        <a routerLink="/" >
+            <img
+                src="image/WaterBels.png"
+                height="100%"
+            >
+        </a>
+    </div>
+    <div class="links">
+        <button class="cookie-clicker" (click)="onScrollToBottom()">
+            <a href="#">
+                Cookie clicker
+            </a>
+        </button>
+        <button class="score-board" [routerLink]="['/login']">
+            <a>
+                Tableau des scores
+            </a>
+        </button>
+    </div>
+    <router-outlet></router-outlet>
+</div>

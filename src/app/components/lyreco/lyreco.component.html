@@ -1,0 +1,20 @@
+<div class="image-container">
+  <!-- Image principale avec animation -->
+  <img
+    src="image/lyreco.png"
+    alt="Image Lyreco"
+    class="random-image"
+    [class.animate]="isAnimating"
+    [style.top]="topPosition"
+    [style.left]="leftPosition"
+    (click)="onImageClick()"
+  />
+
+  <!-- GIF affiché dynamiquement -->
+  <img
+    *ngIf="showGif"
+    src="gif/bubble_gif.gif"
+    alt="GIF Animation"
+    class="gif-animation"
+  />
+</div>
