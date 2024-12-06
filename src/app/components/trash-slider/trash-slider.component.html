@@ -1,0 +1,13 @@
+<div class="game-container">
+    <img
+    *ngFor="let image of images; let i = index"
+      [src]="image.src"
+      [ngStyle]="{
+        left: image.x + 'px',
+        top: image.y + 'px'
+      }"
+      (click)="removeImage(i)"
+      class="game-image"
+    />
+  </div>
+  

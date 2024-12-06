@@ -1,9 +1,10 @@
-  import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { LyrecoComponent } from '../lyreco/lyreco.component';
+import { GameComponent } from '../trash-slider/trash-slider.component';
 
 @Component({
   selector: 'app-sea',
-  imports: [LyrecoComponent],
+  imports: [GameComponent, LyrecoComponent],
   templateUrl: './sea.component.html',
   styleUrl: './sea.component.css'
 })
