@@ -1,7 +1,8 @@
+// src/app/login/login.component.ts
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { SupabaseService } from '../../supabase.service';
 import { FormsModule } from '@angular/forms';
-
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
@@ -11,6 +12,19 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
+  email: string = '';
+  password: string = '';
+  
+  constructor(private supabaseService: SupabaseService) {}
+  
+  async login() {
+    try {
+      const user = await this.supabaseService.signIn(this.email, this.password);
+      console.log('User logged in:', user);
+    } catch (error: any) {
+      console.error('Login error:', error.message);
+    }
+  }
   morseInput: string = ''; // Le code Morse généré
   translatedText: string = ''; // La traduction en texte clair
   private keyPressStartTime: number = 0; // Temps de début d'une pression sur une touche
