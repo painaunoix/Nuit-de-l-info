@@ -24,7 +24,7 @@ export class LyrecoComponent implements OnInit {
   startRandomMovement(): void {
     setInterval(() => {
       this.moveImageToRandomPosition();
-    }, 10000); // Déplacement toutes les 10 secondes
+    }, 7000); // Déplacement toutes les 10 secondes
   }
 
   moveImageToRandomPosition(): void {
@@ -35,6 +35,7 @@ export class LyrecoComponent implements OnInit {
   }
 
   onImageClick(): void {
+    this.moveImageToRandomPosition();
     console.log('Image cliquée !');
 
     // Affiche le GIF
