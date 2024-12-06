@@ -1,0 +1,15 @@
+.game-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5000;
+    overflow: hidden;
+  }
+  
+  .game-image {
+    position: absolute;
+    transition: transform 0.1s linear;
+    width: 50px; /* Taille des images */
+    height: 50px;
+  }
+  
