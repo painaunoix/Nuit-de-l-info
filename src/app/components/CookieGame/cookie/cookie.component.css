@@ -1,0 +1,14 @@
+.cookie-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cookie {
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.cookie:active {
+  transform: scale(0.9);
+}
